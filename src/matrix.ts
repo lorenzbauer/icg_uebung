@@ -49,12 +49,7 @@ export default class Matrix {
    * @return The resulting translation matrix
    */
   static translation(translation: Vector): Matrix {
-    return new Matrix([
-      1, 0, 0, translation.x,
-      0, 1, 0, translation.y,
-      0, 0, 1, translation.z,
-      0, 0, 0, 1
-    ]);
+    // TODO
   }
 
   /**
@@ -73,12 +68,7 @@ export default class Matrix {
    * @return The resulting scaling matrix
    */
   static scaling(scale: Vector): Matrix {
-    return new Matrix([
-      scale.x, 0, 0, 0,
-      0, scale.y, 0, 0,
-      0, 0, scale.z, 0,
-      0, 0, 0, 1
-    ]);
+    // TODO
   }
 
   /**
@@ -137,17 +127,7 @@ export default class Matrix {
    * @return The result of the multiplication this*other
    */
   mul(other: Matrix): Matrix {
-    let result = new Matrix([]);
-    for (let row = 0; row < 4; row++) {
-      for (let col = 0; col < 4; col++) {
-        let sum = 0;
-        for (let i = 0; i < 4; i++) {
-          sum += this.getVal(row, i) * other.getVal(i, col);
-        }
-        result.setVal(row, col, sum);
-      }
-    }
-    return result;
+    // TODO
   }
 
   /**
@@ -156,13 +136,7 @@ export default class Matrix {
    * @return The result of the multiplication this*other
    */
   mulVec(other: Vector): Vector {
-    let result = new Vector(0, 0, 0, 0);
-    for (let row = 0; row < 4; row++) {
-      for (let col = 0; col < 4; col++) {
-        result.data[row] += this.getVal(row, col) * other.data[col];
-      }
-    }
-    return result;
+    // TODO
   }
 
   /**
@@ -170,13 +144,7 @@ export default class Matrix {
    * @return A new matrix that is the transposed of this
    */
   transpose(): Matrix {
-    let result = new Matrix([]);
-    for (let row = 0; row < 4; row++) {
-      for (let col = 0; col < 4; col++) {
-        result.setVal(col, row, this.getVal(row, col));
-      }
-    }
-    return result;
+    // TODO
   }
 
   /**

@@ -15,7 +15,7 @@ export default class Vector {
    * @param w The w component
    */
   constructor(x: number, y: number, z: number, w: number) {
-    this.data = [x, y, z, w];
+    // TODO
   }
 
   /**
@@ -23,7 +23,7 @@ export default class Vector {
    * @return The x component of the vector
    */
   get x(): number {
-    return this.data[0];
+    // TODO
   }
 
   /**
@@ -31,7 +31,7 @@ export default class Vector {
    * @param val - The new value
    */
   set x(val: number) {
-    this.data[0] = val;
+    // TODO
   }
 
   /**
@@ -39,7 +39,7 @@ export default class Vector {
    * @return The first component of the vector
    */
   get r(): number {
-    return this.data[0];
+    // TODO
   }
 
   /**
@@ -47,7 +47,7 @@ export default class Vector {
    * @param val The new value
    */
   set r(val: number) {
-    this.data[0] = val;
+    // TODO
   }
 
   /**
@@ -55,7 +55,7 @@ export default class Vector {
    * @return The y component of the vector
    */
   get y(): number {
-    return this.data[1];
+    // TODO
   }
 
   /**
@@ -63,7 +63,7 @@ export default class Vector {
    * @param val The new value
    */
   set y(val: number) {
-    this.data[1] = val;
+    // TODO
   }
 
   /**
@@ -71,7 +71,7 @@ export default class Vector {
    * @return The second component of the vector
    */
   get g(): number {
-    return this.data[1];
+    // TODO
   }
 
   /**
@@ -79,7 +79,7 @@ export default class Vector {
    * @param val The new value
    */
   set g(val: number) {
-    this.data[1] = val;
+    // TODO
   }
 
   /**
@@ -87,7 +87,7 @@ export default class Vector {
    * @return The z component of the vector
    */
   get z(): number {
-    return this.data[2];
+    // TODO
   }
 
   /**
@@ -95,7 +95,7 @@ export default class Vector {
    * @param val The new value
    */
   set z(val: number) {
-    this.data[2] = val;
+    // TODO
   }
 
   /**
@@ -103,7 +103,7 @@ export default class Vector {
    * @return The third component of the vector
    */
   get b(): number {
-    return this.data[2];
+    // TODO
   }
 
   /**
@@ -111,7 +111,7 @@ export default class Vector {
    * @param val The new value
    */
   set b(val: number) {
-    this.data[2] = val;
+    // TODO
   }
 
   /**
@@ -119,7 +119,7 @@ export default class Vector {
    * @return The w component of the vector
    */
   get w(): number {
-    return this.data[3];
+    // TODO
   }
 
   /**
@@ -127,7 +127,7 @@ export default class Vector {
    * @param val The new value
    */
   set w(val: number) {
-    this.data[3] = val;
+    // TODO
   }
 
   /**
@@ -135,7 +135,7 @@ export default class Vector {
    * @return The fourth component of the vector
    */
   get a(): number {
-    return this.data[3];
+    // TODO
   }
 
   /**
@@ -143,7 +143,7 @@ export default class Vector {
    * @param val The new value
    */
   set a(val: number) {
-    this.data[3] = val;
+    // TODO
   }
 
   /**
@@ -152,7 +152,7 @@ export default class Vector {
    * @return The new vector;
    */
   add(other: Vector): Vector {
-    return new Vector(this.data[0] + other.x, this.data[1] + other.y, this.data[2] + other.z, this.data[3] + other.w);
+    // TODO
   }
 
   /**
@@ -161,7 +161,7 @@ export default class Vector {
    * @return The new vector
    */
   sub(other: Vector): Vector {
-    return new Vector(this.data[0] - other.x, this.data[1] - other.y, this.data[2] - other.z, this.data[3] - other.w);
+    // TODO
   }
 
   /**
@@ -170,7 +170,7 @@ export default class Vector {
    * @return The new vector
    */
   mul(other: number): Vector {
-    return new Vector(this.data[0] * other, this.data[1] * other, this.data[2] * other, this.data[3] * other);
+    // TODO
   }
 
   /**
@@ -179,7 +179,7 @@ export default class Vector {
    * @return The new vector
    */
   div(other: number): Vector {
-    return new Vector(this.data[0] / other, this.data[1] / other, this.data[2] / other, this.data[3] / other);
+    // TODO
   }
 
   /**
@@ -188,7 +188,7 @@ export default class Vector {
    * @return The result of the dot product
    */
   dot(other: Vector): number {
-    return this.data[0] * other.x + this.data[1] * other.y + this.data[2] * other.z + this.data[3] * other.w;
+    // TODO
   }
 
   /**
@@ -198,7 +198,7 @@ export default class Vector {
    * @return The result of the cross product as new Vector
    */
   cross(other: Vector): Vector {
-    return new Vector(this.data[1] * other.z - this.data[2] * other.y, this.data[2] * other.x - this.data[0] * other.z, this.data[0] * other.y - this.data[1] * other.x, 0);
+    // TODO
   }
 
   /**
@@ -206,7 +206,7 @@ export default class Vector {
    * @return An array representation.
    */
   valueOf(): [number, number, number, number] {
-    return this.data;
+    // TODO
   }
 
   /**
@@ -214,8 +214,7 @@ export default class Vector {
    * @returns this vector for easier function chaining
    */
   normalize(): Vector {
-    const length = this.length;
-    return new Vector(this.data[0] / length, this.data[1] / length, this.data[2] / length, 0);
+    // TODO
   }
 
   /**
@@ -224,8 +223,7 @@ export default class Vector {
    * @return True if the vectors carry equal numbers. The fourth element may be both equivalent to undefined to still return true.
    */
   equals(other: Vector): boolean {
-    // return this.data[0] - other.x <= Number.EPSILON && this.data[1] - other.y <= Number.EPSILON && this.data[2] - other.z <= Number.EPSILON;
-    return this.data[0] === other.x && this.data[1] === other.y && this.data[2] === other.z;
+    // TODO
   }
 
   /**
@@ -233,7 +231,6 @@ export default class Vector {
    * @return The length of the vector
    */
   get length(): number {
-    return Math.sqrt(this.data[0] * this.data[0] + this.data[1] * this.data[1] + this.data[2] * this.data[2] + this.data[3] * this.data[3]);
+    // TODO
   }
 }
-
